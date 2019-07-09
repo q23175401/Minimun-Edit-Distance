@@ -1,8 +1,8 @@
-# Minimun-Edit-Distance
-用python 寫的 Minimun-Edit-Distance
+# Minimum-Edit-Distance
+用python 寫的 Minimum-Edit-Distance
 
 說明:
-  利用遞迴完成minimun edit distance
+  利用遞迴完成minimum edit distance
  
 程式說明:
 
