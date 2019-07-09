@@ -17,12 +17,12 @@ def MED_re(ori_s, new_s, ori_s_index, new_s_index, dist_mat, action_mat):
         insert_string = ""
         for a in range(new_s_index, len(new_s)):
             insert_string += "<ins_({})> ".format(new_s[a])
-        return len(new_s)-new_s_index, insert_string
+        return len(new_s)-new_s_index * INSERT_COST, insert_string
     elif len(new_s)-new_s_index == 0:
         delete_string = ""
         for a in range(ori_s_index, len(ori_s)):
             delete_string = "<del_({})> ".format(ori_s[a])
-        return len(ori_s)-ori_s_index, delete_string
+        return len(ori_s)-ori_s_index * DELETE_COST, delete_string
 
     if dist_mat[ori_s_index, new_s_index] != None:
         return dist_mat[ori_s_index, new_s_index], action_mat[ori_s_index, new_s_index]
